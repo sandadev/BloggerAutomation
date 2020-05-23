@@ -1,0 +1,12 @@
+﻿<div class='movie-db-container'>
+	<div class='movie-img'>
+		<img border='0' data-original-height='755' data-original-width='509' height='320' src=_postImage width='215' /></a>
+		<p class='viewall btn'><a href='#'>Watch Now</a></p>
+	</div>
+	<div class='movie-desc'>
+		<p>_description</p>
+		<p class='headline'><b>Language</b>: _language </p>
+		<p class='headline'><img alt='IMDB Rating' src='https://svgshare.com/i/L6c.svg' />_imdbrating/10<img alt='Rotten Tomotoes Rating' src='https://svgshare.com/i/L8C.svg'/>_rotten/5<img alt='OTT Guide Rating' src='https://svgshare.com/i/LK9.svg'/>_ottguide/5</p>
+		<p class='headline'><b>Genre</b>:<u>_genre</u></p>
+		<p class='headline'><b>Stars</b>:_stars</p>
+		<ul class='where-to'><h2>Available on:</h2>_availableon</ul></div></div>
