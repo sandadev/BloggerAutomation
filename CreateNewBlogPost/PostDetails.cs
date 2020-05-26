@@ -12,6 +12,8 @@ namespace CreateNewBlogPost
         public string Title { get; set; }
         public string PostImage { get; set; }
         public string Labels { get; set; }
+        public string Year { get; set; }
+        public string Age { get; set; }
         public string Description { get; set; }
         public string Language { get; set; }
         public string ImdbRating { get; set; }
@@ -20,6 +22,8 @@ namespace CreateNewBlogPost
         public string Genre { get; set; }
         public string Stars { get; set; }
         public string AvailableOn { get; set; }
+        public string YTId { get; set; }
+
 
         
     }

@@ -13,9 +13,9 @@ namespace CreateNewBlogPost
         {
             var htmlFile = "HtmlTemplateFile.txt";
             var content = File.ReadAllText(htmlFile);
-            content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Language, postDetails.Language).
+            content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Year, postDetails.Year).Replace(ToBeReplaceText.Age, postDetails.Age).Replace(ToBeReplaceText.Language, postDetails.Language).
                 Replace(ToBeReplaceText.ImdbRating, postDetails.ImdbRating).Replace(ToBeReplaceText.RottenTomatoesRating, postDetails.RottenTomatoesRating).Replace(ToBeReplaceText.OttguideRating, postDetails.OttguideRating)
-                .Replace(ToBeReplaceText.Genre, postDetails.Genre)
+                .Replace(ToBeReplaceText.Genre, postDetails.Genre).Replace(ToBeReplaceText.YTId, postDetails.YTId)
                 .Replace(ToBeReplaceText.Stars, postDetails.Stars);
             if (postDetails.AvailableOn.Contains("Prime Video"))
             {
