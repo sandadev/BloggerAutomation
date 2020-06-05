@@ -21,21 +21,33 @@ namespace CreateNewBlogPost
        
         static async Task Main(string[] args)
         {
-            Console.WriteLine("New posting in blogger started ....... ");
-            Console.WriteLine("Please provide input file");
-            var inputFilePath = Console.ReadLine();
-            if (inputFilePath.EndsWith("json"))
+            try
             {
-                var json = File.ReadAllText(inputFilePath);
-                var postList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<PostDetails>>(json);
-                await BloggerOperations.NewPost(postList);
+                Console.WriteLine("New posting in blogger started ....... ");
+                Console.WriteLine("Please provide input file");
+                var inputFilePath = Console.ReadLine();
+                if (inputFilePath.EndsWith("json"))
+                {
+                    var json = File.ReadAllText(inputFilePath);
+                    var postList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<PostDetails>>(json);
+                    await BloggerOperations.NewPost(postList);
+                    Console.WriteLine("Creating new post completed");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Input file not valid try again !!!");
+                    Console.ReadLine();
+                }
+
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Input file not valid try again !!!");
+                Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
-            
+
+
         }
 
         

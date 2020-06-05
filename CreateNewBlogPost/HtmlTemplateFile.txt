@@ -10,7 +10,7 @@
 		<p class='headline'><img alt='IMDB Rating' src='https://svgshare.com/i/L6c.svg' />_imdbrating/10<img alt='Rotten Tomotoes Rating' src='https://svgshare.com/i/L8C.svg'/>_rotten/5<img alt='OTT Guide Rating' src='https://svgshare.com/i/LK9.svg'/>_ottguide/5</p>
 		<p class='headline'><b>Genre</b>:<u>_genre</u></p>
 		<p class='headline'><b>Stars</b>:_stars</p>
-		<ul class='where-to'><h2>Available on:</h2><li><a href='https://www.apple.com/in/tv/' target="_blank"><img src='https://svgshare.com/i/LNL.svg'/> Apple TV+</a></li></ul>
+		<ul class='where-to'><h2>Available on:</h2>_availableon</ul>
 	</div>
 </div>
 <iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/_ytID/0.jpg" frameborder="0" height="360" src="https://www.youtube.com/embed/_ytID?feature=player_embedded" width="100%"></iframe>

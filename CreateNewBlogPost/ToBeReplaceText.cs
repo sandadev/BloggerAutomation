@@ -18,11 +18,12 @@ namespace CreateNewBlogPost
         public const string OttguideRating = "_ottguide";
         public const string Genre = "_genre";
         public const string Stars = "_stars";
-        public const string AvailableOn = "_availableon";
-        //public const string AmazonTag = "<li><a href='https://www.primevideo.com/'><img src='https://svgshare.com/i/L9R.svg'/> Prime Video</a></li>";
+        public static string AvailableOn = "_availableon";
+        public const string AmazonTag = "<li><a href='https://www.primevideo.com/'><img src='https://svgshare.com/i/L9R.svg'/> Prime Video</a></li>";
         public const string NetfilxTag = "<li><a href='https://www.netflix.com/'><img src='https://svgshare.com/i/LA0.svg'/> Netflix</a></li>";
-        public const string AmazonTag = "test";
+        public const string AppleTv = "<li><a href='https://www.apple.com/in/tv/' target='_blank'><img src='https://svgshare.com/i/LNL.svg'/> Apple TV+</a></li>";
         public const string YTId = "_ytID";
+
 
     }
 }
