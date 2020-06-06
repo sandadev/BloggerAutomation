@@ -54,6 +54,7 @@ namespace CreateNewBlogPost
                 Title = title,
                 Content = content,
 
+
                 Labels = labels,
 
             }, blogId:blogId);
