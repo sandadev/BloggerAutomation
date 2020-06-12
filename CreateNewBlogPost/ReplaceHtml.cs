@@ -13,17 +13,27 @@ namespace CreateNewBlogPost
         {
             var htmlFile = "HtmlTemplateFile.txt";
             var content = File.ReadAllText(htmlFile);
-            content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Year, postDetails.Year).Replace(ToBeReplaceText.Age, postDetails.Age).Replace(ToBeReplaceText.Language, postDetails.Language).
-                Replace(ToBeReplaceText.ImdbRating, postDetails.ImdbRating).Replace(ToBeReplaceText.RottenTomatoesRating, postDetails.RottenTomatoesRating).Replace(ToBeReplaceText.OttguideRating, postDetails.OttguideRating)
-                .Replace(ToBeReplaceText.Genre, postDetails.Genre).Replace(ToBeReplaceText.YTId, postDetails.YTId)
-                .Replace(ToBeReplaceText.Stars, postDetails.Stars);
+
             if (postDetails.AvailableOn.Contains("Prime Video"))
             {
-                content.Replace(ToBeReplaceText.AvailableOn, ToBeReplaceText.AmazonTag);
+                content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Year, postDetails.Year).Replace(ToBeReplaceText.Age, postDetails.Age).Replace(ToBeReplaceText.Language, postDetails.Language).
+                Replace(ToBeReplaceText.ImdbRating, postDetails.ImdbRating).Replace(ToBeReplaceText.RottenTomatoesRating, postDetails.RottenTomatoesRating).Replace(ToBeReplaceText.OttguideRating, postDetails.OttguideRating)
+                .Replace(ToBeReplaceText.Genre, postDetails.Genre).Replace(ToBeReplaceText.YTId, postDetails.YTId)
+                .Replace(ToBeReplaceText.Stars, postDetails.Stars).Replace(ToBeReplaceText.AvailableOn, ToBeReplaceText.AmazonTag);
             }
-            else
+            else if(postDetails.AvailableOn.Contains("Netflix"))
             {
-                content.Replace(ToBeReplaceText.AvailableOn, ToBeReplaceText.NetfilxTag);
+                content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Year, postDetails.Year).Replace(ToBeReplaceText.Age, postDetails.Age).Replace(ToBeReplaceText.Language, postDetails.Language).
+                 Replace(ToBeReplaceText.ImdbRating, postDetails.ImdbRating).Replace(ToBeReplaceText.RottenTomatoesRating, postDetails.RottenTomatoesRating).Replace(ToBeReplaceText.OttguideRating, postDetails.OttguideRating)
+                 .Replace(ToBeReplaceText.Genre, postDetails.Genre).Replace(ToBeReplaceText.YTId, postDetails.YTId)
+                 .Replace(ToBeReplaceText.Stars, postDetails.Stars).Replace(ToBeReplaceText.AvailableOn, ToBeReplaceText.NetfilxTag);
+            }
+            else if (postDetails.AvailableOn.Contains("Netflix"))
+            {
+                content = content.Replace(ToBeReplaceText.PostImage, postDetails.PostImage).Replace(ToBeReplaceText.Description, postDetails.Description).Replace(ToBeReplaceText.Year, postDetails.Year).Replace(ToBeReplaceText.Age, postDetails.Age).Replace(ToBeReplaceText.Language, postDetails.Language).
+                 Replace(ToBeReplaceText.ImdbRating, postDetails.ImdbRating).Replace(ToBeReplaceText.RottenTomatoesRating, postDetails.RottenTomatoesRating).Replace(ToBeReplaceText.OttguideRating, postDetails.OttguideRating)
+                 .Replace(ToBeReplaceText.Genre, postDetails.Genre).Replace(ToBeReplaceText.YTId, postDetails.YTId)
+                 .Replace(ToBeReplaceText.Stars, postDetails.Stars).Replace(ToBeReplaceText.AvailableOn, ToBeReplaceText.NetfilxTag);
             }
 
             return content;
